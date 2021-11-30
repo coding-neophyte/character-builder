@@ -1,11 +1,20 @@
 import React from 'react'
 
 
-export default function Picker({ head, torso, legs, onHeadChange, onTorsoChange, onLegsChange, catchPhrase, addCatchPhrase, handleClick}) {
+export default function Picker({
+    head,
+    torso,
+    legs,
+    onHeadChange,
+    onTorsoChange,
+    onLegsChange,
+    catchPhrase,
+    setCatchPhrase,
+    handleClick}) {
 
-    const headOptions = ['bird', 'dog', 'duck']
-    const torsoOptions = ['blue', 'fancy', 'pink', 'red']
-    const legOptions = ['baggy', 'slim', 'loose', 'bootcut']
+    const headOptions = ['cap', 'beanie', 'tophat', 'bucket']
+    const torsoOptions = ['polo', 'sweater', 'buttonup', 'cardigan']
+    const legOptions = ['baggy', 'slimfit', 'skinny', 'bootcut']
 
 
 
@@ -33,9 +42,9 @@ export default function Picker({ head, torso, legs, onHeadChange, onTorsoChange,
             </label>
             <label>
                 Add A Catchphrase
-                <input value={catchPhrase} onChange={(e) => addCatchPhrase(e.target.value)}></input>
-                <button type='button' onClick={() => handleClick()}> Add </button>
+                <input type='text' value={catchPhrase} onChange={(e) => setCatchPhrase(e.target.value)}></input>
             </label>
+            <button type='button' onClick={() => handleClick()}> Add </button>
         </div>
     )
 }
