@@ -2,26 +2,33 @@ import React from 'react'
 
 
 export default function Picker({ head, torso, legs, onHeadChange, onTorsoChange, onLegsChange, catchPhrase, addCatchPhrase, handleClick}) {
+
+    const headOptions = ['bird', 'dog', 'duck']
+    const torsoOptions = ['blue', 'fancy', 'pink', 'red']
+    const legOptions = ['baggy', 'slim', 'loose', 'bootcut']
+
+
+
     return (
         <div>
             <label>
                 Head
                 <select value={head} onChange={(e) => onHeadChange(e.target.value)}>
-                    <option></option>
+                    {headOptions.map(headOp => <option key={headOp}>{headOp}</option>)}
                 </select>
             </label>
 
             <label>
                 Torso
                 <select value={torso} onChange={(e) => onTorsoChange(e.target.value)}>
-                    <option></option>
+                    {torsoOptions.map(middle => <option key={middle}>{middle}</option>)}
                 </select>
             </label>
 
             <label>
                 Legs
                 <select value={legs} onChange={(e) => onLegsChange(e.target.value)}>
-                    <option></option>
+                    {legOptions.map(leg => <option key={leg}>{leg}</option>)}
                 </select>
             </label>
             <label>
