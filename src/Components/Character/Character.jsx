@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function Character({ head, torso, legs }) {
     return (
+        <div style={{display: 'flex', justifyContent: 'center' }}>
         <section style={{display: 'flex', flexDirection: 'column'}}>
             <article aria-label='headArticle'className='head' style={{
                 backgroundImage: `url(./${head}.png)`,
@@ -27,5 +28,6 @@ export default function Character({ head, torso, legs }) {
                 backgroundRepeat: 'no-repeat',}}> </article>
 
         </section>
+        </div>
     )
 }
