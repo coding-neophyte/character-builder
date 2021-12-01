@@ -3,7 +3,7 @@ import React from 'react'
 export default function Character({ head, torso, legs }) {
     return (
         <section style={{display: 'flex', flexDirection: 'column'}}>
-            <article className='head' style={{
+            <article aria-label='headArticle'className='head' style={{
                 backgroundImage: `url(./${head}.png)`,
                 height: 150,
                 width: 150,

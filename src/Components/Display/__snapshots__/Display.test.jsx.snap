@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render catch phrases 1`] = `
+<div>
+  <div>
+    <p>
+      howdy
+    </p>
+    <p>
+      what it do
+    </p>
+    <p>
+      peace god
+    </p>
+  </div>
+</div>
+`;
