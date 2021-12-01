@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render picker component 1`] = `
+<div>
+  <div
+    style="display: flex; justify-content: center;"
+  >
+    <label>
+      Head
+      <select>
+        <option>
+          cap
+        </option>
+        <option>
+          beanie
+        </option>
+        <option>
+          tophat
+        </option>
+        <option>
+          bucket
+        </option>
+      </select>
+    </label>
+    <label>
+      Torso
+      <select>
+        <option>
+          polo
+        </option>
+        <option>
+          sweater
+        </option>
+        <option>
+          buttonup
+        </option>
+        <option>
+          cardigan
+        </option>
+      </select>
+    </label>
+    <label>
+      Legs
+      <select>
+        <option>
+          baggy
+        </option>
+        <option>
+          slimfit
+        </option>
+        <option>
+          skinny
+        </option>
+        <option>
+          bootcut
+        </option>
+      </select>
+    </label>
+    <label>
+      Add A Catchphrase
+      <input
+        type="text"
+        value=""
+      />
+    </label>
+    <button
+      class="button"
+      type="button"
+    >
+       Add 
+    </button>
+  </div>
+</div>
+`;
