@@ -16,12 +16,14 @@ exports[`should render elements in character component 1`] = `
          
       </article>
       <article
+        aria-label="torsoArticle"
         class="torso"
         style="background-image: url(./cardigan.png); height: 150px; width: 150px; background-size: cover; background-repeat: no-repeat;"
       >
          
       </article>
       <article
+        aria-label="legsArticle"
         class="legs"
         style="background-image: url(./baggy.png); height: 150px; width: 150px; background-size: cover; background-repeat: no-repeat;"
       >
